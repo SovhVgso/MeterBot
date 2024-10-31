@@ -32,7 +32,7 @@ if __name__ == "__main__":
 #运行程序
 ```
 
-# 从文件夹导入
+# 从文件夹加载
 
 ```undefined
 from Meterbot import Bot,Plugin
@@ -65,3 +65,6 @@ event = Event(bot)
 async def message_handler(event_structure):
     event_structure.reply("测试")
 ```
+在被加载文件夹的路径下，插件也可以文件夹形式存在，其中被运行的文件为main.py
+
+示例：plugins/插件名/main.py
