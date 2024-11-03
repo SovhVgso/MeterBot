@@ -23,7 +23,7 @@ event = Event(bot)
 ```undefined
 @event.on_message("测试")
 async def message_handler(event_structure):
-    event_structure.reply("测试")
+    await event_structure.reply("测试")
 ```
 
 ```undefined
@@ -63,7 +63,7 @@ event = Event(bot)
 
 @event.on_message("测试")
 async def message_handler(event_structure):
-    event_structure.reply("测试")
+    await event_structure.reply("测试")
 ```
 在被加载文件夹的路径下，插件也可以文件夹形式存在，其中被运行的文件为main.py
 
